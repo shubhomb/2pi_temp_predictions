@@ -1,0 +1,28 @@
+2025-12-04 16:02:33,304 INFO: Logging started. Output file: rnn_training/20251204_160232/console_20251204_160232.log
+2025-12-04 16:02:33,304 INFO: Seed: 42
+2025-12-04 16:02:35,732 INFO: Activity snippets shape: (15551, 50, 110)
+2025-12-04 16:02:35,732 INFO: Stim snippets shape: (15551, 50, 10)
+2025-12-04 16:02:39,360 INFO: Training set: (12440, 50, 10), (12440, 50, 110)
+2025-12-04 16:02:39,361 INFO: Validation set: (1555, 50, 10), (1555, 50, 110)
+2025-12-04 16:02:39,361 INFO: Test set: (1556, 50, 10), (1556, 50, 110)
+2025-12-04 16:02:39,361 INFO: Batch size: 8
+2025-12-04 16:02:39,495 INFO: Input size: 10
+2025-12-04 16:02:39,495 INFO: Output size: 110
+2025-12-04 16:02:39,496 INFO: Hidden state size: 256
+2025-12-04 16:02:40,096 INFO: Learning rate 0.001
+2025-12-04 16:02:40,096 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+2025-12-04 16:02:40,096 INFO: Loss type: mae
+2025-12-04 16:37:25,609 INFO: Number of epochs 50

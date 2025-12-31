@@ -1,0 +1,65 @@
+2025-12-18 21:55:34,033 INFO: Logging started. Output file: rnn_training/20251218_215533/console_20251218_215533.log
+2025-12-18 21:55:34,034 INFO: Seed: 42
+2025-12-18 21:55:39,008 INFO: Iniitial conds shape: (15401, 110)
+2025-12-18 21:55:39,011 INFO: Activity snippets shape: (15401, 200, 110)
+2025-12-18 21:55:39,014 INFO: Stim snippets shape: (15401, 200, 10)
+2025-12-18 21:55:39,014 INFO: Snippet overlap: True
+2025-12-18 21:58:09,959 INFO: Overlapping trials but partitioning timepoints in temporal order
+2025-12-18 21:58:09,961 INFO: Initial conds shape: (10057, 110)
+2025-12-18 21:58:09,961 INFO: Stim shape: (10057, 200, 10)
+2025-12-18 21:58:09,962 INFO: Batch size: 8
+2025-12-18 21:58:10,929 INFO: Dataset sizes -> train: 10057, val: 2372, test: 2572
+2025-12-18 21:58:10,933 INFO: Input size: 10
+2025-12-18 21:58:10,934 INFO: Output size: 110
+2025-12-18 21:58:10,935 INFO: Hidden state size: 256
+2025-12-18 21:58:10,959 INFO: Learning rate 0.001
+2025-12-18 21:58:10,960 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+2025-12-18 21:58:10,960 INFO: Loss type: mae
+2025-12-18 21:58:10,960 INFO: Regularization coefficient: 0
+2025-12-18 21:59:38,292 INFO:   Saved best model with val loss 0.104196 to rnn_training/20251218_215533/best_model.pth
+2025-12-18 22:10:25,952 INFO: Early stopping due to no improvement in validation loss for 5 consecutive epochs.
+2025-12-18 22:42:27,868 INFO:   Saved best model with val loss 0.119080 to rnn_training/20251218_215533/best_model.pth
+2025-12-18 22:43:56,376 INFO:   Saved best model with val loss 0.118335 to rnn_training/20251218_215533/best_model.pth
+2025-12-18 22:51:24,976 INFO: Early stopping due to no improvement in validation loss for 5 consecutive epochs.
+2025-12-18 22:51:32,273 INFO: Test Loss: 0.094592
+2025-12-18 23:12:32,373 INFO: Test Loss: 0.094592
+2025-12-18 23:24:24,672 INFO: Overlapping trials but partitioning timepoints in temporal order
+2025-12-18 23:24:24,674 INFO: Initial conds shape: (10057, 110)
+2025-12-18 23:24:24,675 INFO: Stim shape: (10057, 200, 10)
+2025-12-18 23:24:24,676 INFO: Batch size: 8
+2025-12-18 23:24:26,558 INFO: Dataset sizes -> train: 10057, val: 2372, test: 2572
+2025-12-18 23:24:26,560 INFO: Input size: 10
+2025-12-18 23:24:26,560 INFO: Output size: 110
+2025-12-18 23:24:26,561 INFO: Hidden state size: 256
+2025-12-18 23:24:26,575 INFO: Learning rate 0.001
+2025-12-18 23:24:26,576 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0.001
+)
+2025-12-18 23:24:26,576 INFO: Loss type: mae
+2025-12-18 23:24:26,577 INFO: Regularization coefficient: 0.001
+2025-12-18 23:24:36,383 ERROR: Task was destroyed but it is pending!
+task: <Task pending name='Task-2' coro=<Kernel.poll_control_queue() running at /Users/shubhom/anaconda3/envs/3_11/lib/python3.11/site-packages/ipykernel/kernelbase.py:309> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[_chain_future.<locals>._call_set_state() at /Users/shubhom/anaconda3/envs/3_11/lib/python3.11/asyncio/futures.py:394]>

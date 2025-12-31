@@ -1,0 +1,68 @@
+2025-12-03 14:31:49,163 INFO: Logging started. Output file: rnn_training/console_20251203_143148.log
+2025-12-03 14:42:19,537 INFO: Training set: (37154, 120, 10), (37154, 120, 110)
+2025-12-03 14:42:19,544 INFO: Validation set: (4644, 120, 10), (4644, 120, 110)
+2025-12-03 14:42:19,545 INFO: Test set: (4645, 120, 10), (4645, 120, 110)
+2025-12-03 14:43:29,294 INFO:   Saved best model with val loss 0.013378 to best_model.pth
+2025-12-03 14:44:17,335 INFO:   Saved best model with val loss 0.012339 to best_model.pth
+2025-12-03 14:45:08,815 INFO:   Saved best model with val loss 0.011830 to best_model.pth
+2025-12-03 14:45:57,192 INFO:   Saved best model with val loss 0.011461 to best_model.pth
+2025-12-03 14:46:46,058 INFO:   Saved best model with val loss 0.011087 to best_model.pth
+2025-12-03 14:47:34,795 INFO:   Saved best model with val loss 0.010698 to best_model.pth
+2025-12-03 14:48:25,071 INFO:   Saved best model with val loss 0.010411 to best_model.pth
+2025-12-03 14:49:15,637 INFO:   Saved best model with val loss 0.010004 to best_model.pth
+2025-12-03 14:50:07,393 INFO:   Saved best model with val loss 0.009910 to best_model.pth
+2025-12-03 14:50:56,104 INFO:   Saved best model with val loss 0.009702 to best_model.pth
+2025-12-03 14:51:53,073 INFO: Test Loss: 0.009522
+2025-12-03 15:30:18,371 INFO: Training set: (105, 350, 10), (105, 350, 110)
+2025-12-03 15:30:18,374 INFO: Validation set: (13, 350, 10), (13, 350, 110)
+2025-12-03 15:30:18,374 INFO: Test set: (14, 350, 10), (14, 350, 110)
+2025-12-03 15:30:28,129 INFO:   Saved best model with val loss 0.028000 to best_model.pth
+2025-12-03 15:30:28,574 INFO:   Saved best model with val loss 0.026349 to best_model.pth
+2025-12-03 15:30:29,040 INFO:   Saved best model with val loss 0.025256 to best_model.pth
+2025-12-03 15:30:29,571 INFO:   Saved best model with val loss 0.024485 to best_model.pth
+2025-12-03 15:30:30,070 INFO:   Saved best model with val loss 0.023996 to best_model.pth
+2025-12-03 15:30:30,569 INFO:   Saved best model with val loss 0.023738 to best_model.pth
+2025-12-03 15:30:31,079 INFO:   Saved best model with val loss 0.023647 to best_model.pth
+2025-12-03 15:30:31,533 INFO:   Saved best model with val loss 0.023620 to best_model.pth
+2025-12-03 15:30:31,974 INFO:   Saved best model with val loss 0.023586 to best_model.pth
+2025-12-03 15:30:32,491 INFO:   Saved best model with val loss 0.023571 to best_model.pth
+2025-12-03 15:31:37,646 INFO: Test Loss: 0.024486
+2025-12-03 15:44:00,865 INFO: Training set: (247, 150, 10), (247, 150, 110)
+2025-12-03 15:44:00,866 INFO: Validation set: (31, 150, 10), (31, 150, 110)
+2025-12-03 15:44:00,866 INFO: Test set: (31, 150, 10), (31, 150, 110)
+2025-12-03 15:44:20,391 INFO: Training set: (247, 150, 10), (247, 150, 110)
+2025-12-03 15:44:20,391 INFO: Validation set: (31, 150, 10), (31, 150, 110)
+2025-12-03 15:44:20,392 INFO: Test set: (31, 150, 10), (31, 150, 110)
+2025-12-03 15:44:22,827 INFO:   Saved best model with val loss 0.022657 to best_model.pth
+2025-12-03 15:44:23,253 INFO:   Saved best model with val loss 0.020647 to best_model.pth
+2025-12-03 15:44:23,640 INFO:   Saved best model with val loss 0.020208 to best_model.pth
+2025-12-03 15:44:24,064 INFO:   Saved best model with val loss 0.019986 to best_model.pth
+2025-12-03 15:44:24,473 INFO:   Saved best model with val loss 0.019917 to best_model.pth
+2025-12-03 15:44:24,914 INFO:   Saved best model with val loss 0.019830 to best_model.pth
+2025-12-03 15:44:25,345 INFO:   Saved best model with val loss 0.019754 to best_model.pth
+2025-12-03 15:44:25,788 INFO:   Saved best model with val loss 0.019660 to best_model.pth
+2025-12-03 15:44:26,244 INFO:   Saved best model with val loss 0.019530 to best_model.pth
+2025-12-03 15:44:26,644 INFO:   Saved best model with val loss 0.019226 to best_model.pth
+2025-12-03 15:47:02,777 INFO: Training set: (247, 150, 10), (247, 150, 110)
+2025-12-03 15:47:02,778 INFO: Validation set: (31, 150, 10), (31, 150, 110)
+2025-12-03 15:47:02,779 INFO: Test set: (31, 150, 10), (31, 150, 110)
+2025-12-03 15:47:03,582 INFO:   Saved best model with val loss 0.022083 to best_model.pth
+2025-12-03 15:47:03,978 INFO:   Saved best model with val loss 0.020530 to best_model.pth
+2025-12-03 15:47:04,396 INFO:   Saved best model with val loss 0.020089 to best_model.pth
+2025-12-03 15:47:04,808 INFO:   Saved best model with val loss 0.019948 to best_model.pth
+2025-12-03 15:47:05,209 INFO:   Saved best model with val loss 0.019886 to best_model.pth
+2025-12-03 15:47:05,632 INFO:   Saved best model with val loss 0.019824 to best_model.pth
+2025-12-03 15:47:06,034 INFO:   Saved best model with val loss 0.019752 to best_model.pth
+2025-12-03 15:47:06,429 INFO:   Saved best model with val loss 0.019631 to best_model.pth
+2025-12-03 15:47:06,873 INFO:   Saved best model with val loss 0.019420 to best_model.pth
+2025-12-03 15:47:07,279 INFO:   Saved best model with val loss 0.019068 to best_model.pth
+2025-12-03 15:47:08,123 INFO:   Saved best model with val loss 0.018849 to best_model.pth
+2025-12-03 15:47:08,533 INFO:   Saved best model with val loss 0.018188 to best_model.pth
+2025-12-03 15:47:09,327 INFO:   Saved best model with val loss 0.017843 to best_model.pth
+2025-12-03 15:47:10,124 INFO:   Saved best model with val loss 0.017695 to best_model.pth
+2025-12-03 15:47:11,708 INFO:   Saved best model with val loss 0.017536 to best_model.pth
+2025-12-03 15:47:13,786 INFO:   Saved best model with val loss 0.017333 to best_model.pth
+2025-12-03 15:47:17,441 INFO:   Saved best model with val loss 0.017205 to best_model.pth
+2025-12-03 15:47:18,386 INFO:   Saved best model with val loss 0.017129 to best_model.pth
+2025-12-03 15:47:18,800 INFO:   Saved best model with val loss 0.017004 to best_model.pth
+2025-12-03 15:51:38,447 INFO: Test Loss: 0.017739

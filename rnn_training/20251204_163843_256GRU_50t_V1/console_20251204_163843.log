@@ -1,0 +1,68 @@
+2025-12-04 16:38:44,444 INFO: Logging started. Output file: rnn_training/20251204_163843/console_20251204_163843.log
+2025-12-04 16:38:44,445 INFO: Seed: 42
+2025-12-04 16:38:47,672 INFO: Iniitial conds shape: (15551, 110)
+2025-12-04 16:38:47,673 INFO: Activity snippets shape: (15551, 50, 110)
+2025-12-04 16:38:47,673 INFO: Stim snippets shape: (15551, 50, 10)
+2025-12-04 16:49:16,088 INFO: Batch size: 8
+2025-12-04 16:49:21,137 INFO: Batch size: 8
+2025-12-04 16:49:21,178 INFO: Dataset sizes -> train: 10885, val: 2333, test: 2333
+2025-12-04 16:49:21,179 INFO: Input size: 10
+2025-12-04 16:49:21,179 INFO: Output size: 110
+2025-12-04 16:49:21,179 INFO: Hidden state size: 256
+2025-12-04 16:49:21,755 INFO: Learning rate 0.001
+2025-12-04 16:49:21,755 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+2025-12-04 16:49:21,755 INFO: Loss type: mae
+2025-12-04 16:51:00,987 INFO:   Saved best model with val loss 0.059542 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:51:28,250 INFO:   Saved best model with val loss 0.055962 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:51:55,983 INFO:   Saved best model with val loss 0.053711 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:52:23,949 INFO:   Saved best model with val loss 0.052042 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:52:51,938 INFO:   Saved best model with val loss 0.050105 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:53:20,226 INFO:   Saved best model with val loss 0.048535 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:53:48,454 INFO:   Saved best model with val loss 0.047210 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:54:17,169 INFO:   Saved best model with val loss 0.046112 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:54:44,438 INFO:   Saved best model with val loss 0.045662 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:55:10,580 INFO:   Saved best model with val loss 0.044757 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:55:41,549 INFO:   Saved best model with val loss 0.043735 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:56:12,273 INFO:   Saved best model with val loss 0.043019 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:56:40,409 INFO:   Saved best model with val loss 0.042990 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:57:08,356 INFO:   Saved best model with val loss 0.042168 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:57:37,649 INFO:   Saved best model with val loss 0.041656 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:58:09,811 INFO:   Saved best model with val loss 0.041289 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:58:38,582 INFO:   Saved best model with val loss 0.040703 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 16:59:13,459 INFO:   Saved best model with val loss 0.040382 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:00:26,057 INFO:   Saved best model with val loss 0.039703 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:01:33,211 INFO:   Saved best model with val loss 0.038932 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:02:07,733 INFO:   Saved best model with val loss 0.038804 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:03:20,879 INFO:   Saved best model with val loss 0.038578 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:03:57,120 INFO:   Saved best model with val loss 0.038188 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:04:31,309 INFO:   Saved best model with val loss 0.037847 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:05:12,939 INFO:   Saved best model with val loss 0.037822 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:05:49,228 INFO:   Saved best model with val loss 0.037434 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:07:00,226 INFO:   Saved best model with val loss 0.037204 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:07:37,644 INFO:   Saved best model with val loss 0.037089 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:08:47,047 INFO:   Saved best model with val loss 0.036673 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:09:25,111 INFO:   Saved best model with val loss 0.036661 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:10:06,047 INFO:   Saved best model with val loss 0.036641 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:10:46,660 INFO:   Saved best model with val loss 0.036360 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:11:20,963 INFO:   Saved best model with val loss 0.036070 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:11:54,572 INFO:   Saved best model with val loss 0.035958 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:12:30,225 INFO:   Saved best model with val loss 0.035690 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:14:01,386 INFO:   Saved best model with val loss 0.035568 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:15:35,912 INFO:   Saved best model with val loss 0.035295 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:16:12,057 INFO:   Saved best model with val loss 0.035126 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:16:48,174 INFO:   Saved best model with val loss 0.035112 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:17:56,363 INFO:   Saved best model with val loss 0.034911 to rnn_training/20251204_163843/best_model.pth
+2025-12-04 17:24:30,918 INFO: Test Loss: 0.035114

@@ -1,0 +1,151 @@
+2025-12-19 19:50:58,991 INFO: Logging started. Output file: rnn_training/20251219_195056/console_20251219_195056.log
+2025-12-19 19:50:58,991 INFO: Seed: 42
+2025-12-19 19:51:04,722 INFO: Iniitial conds shape: (46503, 110)
+2025-12-19 19:51:04,726 INFO: Activity snippets shape: (46503, 100, 110)
+2025-12-19 19:51:04,727 INFO: Stim snippets shape: (46503, 100, 10)
+2025-12-19 19:51:04,728 INFO: Snippet overlap: True
+2025-12-19 19:51:05,607 INFO: Overlapping trials but partitioning timepoints in temporal order
+2025-12-19 19:51:05,788 INFO: Initial conds shape: (30871, 110)
+2025-12-19 19:51:06,010 INFO: Stim shape: (30871, 100, 10)
+2025-12-19 19:51:06,010 INFO: Batch size: 64
+2025-12-19 19:51:06,992 INFO: Dataset sizes -> train: 30871, val: 7666, test: 7766
+2025-12-19 19:51:06,994 INFO: Train input size: 10
+2025-12-19 19:51:06,994 INFO: Train output size: 110
+2025-12-19 19:51:06,995 INFO: Hidden state size: 256
+2025-12-19 19:51:07,009 INFO: Learning rate 0.0005
+2025-12-19 19:51:07,010 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+)
+2025-12-19 19:51:07,010 INFO: Loss type: mae
+2025-12-19 19:51:07,010 INFO: Regularization coefficient: 0
+2025-12-19 19:51:47,695 INFO: Overlapping trials but partitioning timepoints in temporal order
+2025-12-19 19:51:47,696 INFO: Initial conds shape: (30871, 110)
+2025-12-19 19:51:47,696 INFO: Stim shape: (30871, 100, 10)
+2025-12-19 19:51:47,697 INFO: Batch size: 32
+2025-12-19 19:51:48,848 INFO: Dataset sizes -> train: 30871, val: 7666, test: 7766
+2025-12-19 19:51:48,851 INFO: Train input size: 10
+2025-12-19 19:51:48,851 INFO: Train output size: 110
+2025-12-19 19:51:48,852 INFO: Hidden state size: 256
+2025-12-19 19:51:48,866 INFO: Learning rate 0.0005
+2025-12-19 19:51:48,867 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 1e-05
+)
+2025-12-19 19:51:48,867 INFO: Loss type: mae
+2025-12-19 19:51:48,867 INFO: Regularization coefficient: 1e-05
+2025-12-19 19:51:54,789 INFO: Overlapping trials but partitioning timepoints in temporal order
+2025-12-19 19:51:54,790 INFO: Initial conds shape: (30871, 110)
+2025-12-19 19:51:54,790 INFO: Stim shape: (30871, 100, 10)
+2025-12-19 19:51:54,791 INFO: Batch size: 32
+2025-12-19 19:51:56,705 INFO: Dataset sizes -> train: 30871, val: 7666, test: 7766
+2025-12-19 19:51:56,714 INFO: Train input size: 10
+2025-12-19 19:51:56,720 INFO: Train output size: 110
+2025-12-19 19:51:56,724 INFO: Hidden state size: 256
+2025-12-19 19:51:56,739 INFO: Learning rate 0.0005
+2025-12-19 19:51:56,739 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 0
+)
+2025-12-19 19:51:56,742 INFO: Loss type: mae
+2025-12-19 19:51:56,742 INFO: Regularization coefficient: 0
+2025-12-19 19:52:33,677 INFO: Epoch 1 Train loss: 0.08261435487517609
+2025-12-19 19:52:37,474 INFO: Epoch 1 Validation loss: 0.08954720482513981
+2025-12-19 19:52:37,481 INFO:   Saved best model with val loss 0.089547 to rnn_training/20251219_195056/best_model.pth
+2025-12-19 19:53:11,210 INFO: Epoch 2 Train loss: 0.07926819224919032
+2025-12-19 19:53:14,870 INFO: Epoch 2 Validation loss: 0.08778893582555913
+2025-12-19 19:53:14,874 INFO:   Saved best model with val loss 0.087789 to rnn_training/20251219_195056/best_model.pth
+2025-12-19 19:53:48,283 INFO: Epoch 3 Train loss: 0.07733041186509908
+2025-12-19 19:53:51,867 INFO: Epoch 3 Validation loss: 0.08674828293365192
+2025-12-19 19:53:51,872 INFO:   Saved best model with val loss 0.086748 to rnn_training/20251219_195056/best_model.pth
+2025-12-19 19:54:25,345 INFO: Epoch 4 Train loss: 0.07595820145445042
+2025-12-19 19:54:28,925 INFO: Epoch 4 Validation loss: 0.08712337460556448
+2025-12-19 19:55:02,659 INFO: Epoch 5 Train loss: 0.07510896803931442
+2025-12-19 19:55:06,330 INFO: Epoch 5 Validation loss: 0.0866172987935657
+2025-12-19 19:55:06,334 INFO:   Saved best model with val loss 0.086617 to rnn_training/20251219_195056/best_model.pth
+2025-12-19 19:55:40,191 INFO: Epoch 6 Train loss: 0.07434953164978635
+2025-12-19 19:55:43,897 INFO: Epoch 6 Validation loss: 0.08691167496504375
+2025-12-19 19:56:18,016 INFO: Epoch 7 Train loss: 0.07353394260986419
+2025-12-19 19:56:21,691 INFO: Epoch 7 Validation loss: 0.08703820224090372
+2025-12-19 19:56:55,375 INFO: Epoch 8 Train loss: 0.073159806466783
+2025-12-19 19:56:58,883 INFO: Epoch 8 Validation loss: 0.08674232721009953
+2025-12-19 19:57:38,081 INFO: Epoch 9 Train loss: 0.07276452767446791
+2025-12-19 19:57:41,906 INFO: Epoch 9 Validation loss: 0.08713233587155914
+2025-12-19 19:58:16,558 INFO: Epoch 10 Train loss: 0.07251032604521424
+2025-12-19 19:58:20,583 INFO: Epoch 10 Validation loss: 0.08686296506343857
+2025-12-19 19:58:56,161 INFO: Epoch 11 Train loss: 0.07224845284773052
+2025-12-19 19:59:00,060 INFO: Epoch 11 Validation loss: 0.08729539093766299
+2025-12-19 19:59:35,164 INFO: Epoch 12 Train loss: 0.07217653889435535
+2025-12-19 19:59:38,880 INFO: Epoch 12 Validation loss: 0.08728382692514622
+2025-12-19 20:00:13,886 INFO: Epoch 13 Train loss: 0.0720375079504371
+2025-12-19 20:00:17,806 INFO: Epoch 13 Validation loss: 0.08743687594703554
+2025-12-19 20:00:53,689 INFO: Epoch 14 Train loss: 0.07176944674879186
+2025-12-19 20:00:57,313 INFO: Epoch 14 Validation loss: 0.08766955318220471
+2025-12-19 20:01:31,121 INFO: Epoch 15 Train loss: 0.07177842880587224
+2025-12-19 20:01:34,744 INFO: Epoch 15 Validation loss: 0.08768011965858635
+2025-12-19 20:02:09,172 INFO: Epoch 16 Train loss: 0.0716175518099488
+2025-12-19 20:02:13,698 INFO: Epoch 16 Validation loss: 0.08827265934761591
+2025-12-19 20:03:01,772 INFO: Epoch 17 Train loss: 0.07145930711759321
+2025-12-19 20:03:06,287 INFO: Epoch 17 Validation loss: 0.0885765141290689
+2025-12-19 20:03:06,287 INFO: Early stopping due to no improvement in validation loss for 5 consecutive epochs.
+2025-12-19 20:03:38,150 INFO: Test Loss: 0.085379
+2025-12-19 20:04:48,426 INFO: Overlapping trials but partitioning timepoints in temporal order
+2025-12-19 20:04:48,427 INFO: Initial conds shape: (30871, 110)
+2025-12-19 20:04:48,427 INFO: Stim shape: (30871, 100, 10)
+2025-12-19 20:04:48,427 INFO: Batch size: 32
+2025-12-19 20:04:59,207 INFO: Dataset sizes -> train: 30871, val: 7666, test: 7766
+2025-12-19 20:04:59,211 INFO: Train input size: 10
+2025-12-19 20:04:59,211 INFO: Train output size: 110
+2025-12-19 20:04:59,212 INFO: Hidden state size: 256
+2025-12-19 20:04:59,228 INFO: Learning rate 0.0005
+2025-12-19 20:04:59,229 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.0005
+    maximize: False
+    weight_decay: 1e-05
+)
+2025-12-19 20:04:59,229 INFO: Loss type: mae
+2025-12-19 20:04:59,230 INFO: Regularization coefficient: 1e-05
+2025-12-19 20:04:59,653 INFO: Number of epochs 50
+2025-12-19 20:04:59,871 INFO: configs shape: (3, 110, 31)
+2025-12-19 20:04:59,871 INFO: roi_used shape: (512, 512)
+2025-12-19 20:04:59,872 INFO: times shape: (3, 8, 31)
+2025-12-19 20:04:59,872 INFO: dfof shape: (3, 15600, 110)

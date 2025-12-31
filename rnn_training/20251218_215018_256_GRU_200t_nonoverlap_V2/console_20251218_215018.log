@@ -1,0 +1,43 @@
+2025-12-18 21:50:19,464 INFO: Logging started. Output file: rnn_training/20251218_215018/console_20251218_215018.log
+2025-12-18 21:50:19,464 INFO: Seed: 42
+2025-12-18 21:50:22,425 INFO: Iniitial conds shape: (77, 110)
+2025-12-18 21:50:22,425 INFO: Activity snippets shape: (77, 200, 110)
+2025-12-18 21:50:22,426 INFO: Stim snippets shape: (77, 200, 10)
+2025-12-18 21:52:51,493 INFO: Iniitial conds shape: (77, 110)
+2025-12-18 21:52:51,494 INFO: Activity snippets shape: (77, 200, 110)
+2025-12-18 21:52:51,495 INFO: Stim snippets shape: (77, 200, 10)
+2025-12-18 21:52:51,495 INFO: Snippet overlap False
+2025-12-18 21:52:59,705 INFO: Iniitial conds shape: (77, 110)
+2025-12-18 21:52:59,707 INFO: Activity snippets shape: (77, 200, 110)
+2025-12-18 21:52:59,708 INFO: Stim snippets shape: (77, 200, 10)
+2025-12-18 21:52:59,708 INFO: Snippet overlap: False
+2025-12-18 21:53:03,169 INFO: Batch size: 8
+2025-12-18 21:53:03,171 INFO: Dataset sizes -> train: 53, val: 12, test: 12
+2025-12-18 21:53:03,171 INFO: Input size: 10
+2025-12-18 21:53:03,171 INFO: Output size: 110
+2025-12-18 21:53:03,172 INFO: Hidden state size: 256
+2025-12-18 21:53:03,175 INFO: Learning rate 0.001
+2025-12-18 21:53:03,175 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    capturable: False
+    decoupled_weight_decay: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: None
+    lr: 0.001
+    maximize: False
+    weight_decay: 0
+)
+2025-12-18 21:53:03,175 INFO: Loss type: mae
+2025-12-18 21:53:03,176 INFO: Regularization coefficient: 0
+2025-12-18 21:53:04,807 INFO:   Saved best model with val loss 0.102251 to rnn_training/20251218_215018/best_model.pth
+2025-12-18 21:53:05,296 INFO:   Saved best model with val loss 0.099675 to rnn_training/20251218_215018/best_model.pth
+2025-12-18 21:53:05,790 INFO:   Saved best model with val loss 0.099140 to rnn_training/20251218_215018/best_model.pth
+2025-12-18 21:53:07,315 INFO:   Saved best model with val loss 0.098666 to rnn_training/20251218_215018/best_model.pth
+2025-12-18 21:53:07,953 INFO:   Saved best model with val loss 0.098541 to rnn_training/20251218_215018/best_model.pth
+2025-12-18 21:53:14,044 INFO: Early stopping due to no improvement in validation loss for 5 consecutive epochs.
+2025-12-18 21:53:24,814 INFO: Test Loss: 0.081643
+2025-12-18 21:55:16,980 INFO: Number of epochs 50
