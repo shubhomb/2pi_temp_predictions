@@ -3,3 +3,12 @@
 *.mat
 *.h5
 
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+figures/
+figures/*
+*.mp4
+*.pdf
+
+
