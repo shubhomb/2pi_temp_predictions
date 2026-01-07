@@ -1,6 +1,0 @@
-2025-12-18 18:23:51,337 INFO: Logging started. Output file: rnn_training/20251218_182350/console_20251218_182350.log
-2025-12-18 18:23:51,339 INFO: Seed: 42
-2025-12-18 18:24:06,410 INFO: Iniitial conds shape: (15401, 110)
-2025-12-18 18:24:06,412 INFO: Activity snippets shape: (15401, 200, 110)
-2025-12-18 18:24:06,412 INFO: Stim snippets shape: (15401, 200, 10)
-2025-12-18 18:38:41,999 INFO: Number of epochs 50
