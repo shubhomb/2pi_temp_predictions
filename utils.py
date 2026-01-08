@@ -298,11 +298,17 @@ def make_snippets_df(trials_df, activity, length, overlap=True, stride=1, n_elec
             n_times = activity[session].shape[0]
             
             for i in range(0, n_times - length + 1, stride):
+                # Get initial condition
+                if i == 0:
+                    initial_cond = activity[session][0, :]
+                else:
+                    initial_cond = activity[session][i - 1, :]
+                
                 # Get activity snippet
                 activity_snippet = activity[session][i:i + length, :]
                 
                 # Build stim snippet from trials_df
-                stim_snippet, all_configs, all_electrodes, all_currents, all_trials, all_stim_times, all_trial_start_times = \
+                stim_snippet, all_configs, all_electrodes, all_currents, all_trials, all_stim_times = \
                     build_stim_snippet(session, i, length)
                 
                 # Determine first stim metadata (if any)
@@ -315,26 +321,12 @@ def make_snippets_df(trials_df, activity, length, overlap=True, stride=1, n_elec
                     first_current = all_currents[first_idx]
                     first_trial = all_trials[first_idx]
                     first_stim_time = all_stim_times[first_idx]
-                    first_trial_start_time = all_trial_start_times[first_idx]
-                    
-                    # Initial condition: frame preceding the first stim's trial_start_time
-                    if first_trial_start_time > 0:
-                        initial_cond = activity[session][first_trial_start_time - 1, :]
-                    else:
-                        initial_cond = activity[session][0, :]
                 else:
                     first_config = 0
                     first_electrode = -1
                     first_current = 0
                     first_trial = -1
                     first_stim_time = -1
-                    first_trial_start_time = -1
-                    
-                    # No stim in snippet: fall back to frame before snippet start
-                    if i > 0:
-                        initial_cond = activity[session][i - 1, :]
-                    else:
-                        initial_cond = activity[session][0, :]
                 
                 results.append({
                     'session': session,
@@ -345,7 +337,6 @@ def make_snippets_df(trials_df, activity, length, overlap=True, stride=1, n_elec
                     'first_current': first_current,
                     'first_trial': first_trial,
                     'first_stim_time': first_stim_time,  # relative to snippet start
-                    'first_trial_start_time': first_trial_start_time,  # absolute frame of trial start
                     # All stims in snippet (for holdout filtering)
                     'all_configs': all_configs if all_configs else [],
                     'all_electrodes': all_electrodes if all_electrodes else [],
