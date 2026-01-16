@@ -4,6 +4,7 @@ import numpy as np
 import torch.nn.functional as F
 from torch.utils.data import Dataset
 
+
 class RNNModel(nn.Module):
     def __init__(self, input_size: int, units: int, output_size: int, num_layers: int = 2, initial_cond_size: int = None):
         """

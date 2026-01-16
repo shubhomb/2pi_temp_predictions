@@ -923,12 +923,14 @@ def get_model_error(model, loader, criterion, device, LOSS_TYPE):
 
 def get_model_error(model, loader, criterion, device, LOSS_TYPE):
     output_loss = 0.0
+    outputs_collection = []
     with torch.no_grad():
         for (inputs, activity_initial), targets in loader:
             inputs = inputs.to(device)
             activity_initial = activity_initial.to(device)
             targets = targets.to(device)
             outputs = model((inputs, activity_initial))
+            outputs_collection.append(outputs.cpu().numpy())
             # Use weighted loss if available, else standard loss
             if LOSS_TYPE == 'weighted_mae':
                 loss = criterion(outputs, targets, inputs)
@@ -936,7 +938,8 @@ def get_model_error(model, loader, criterion, device, LOSS_TYPE):
                 loss = criterion(outputs, targets)
             output_loss += loss.item() * inputs.size(0)
     test_loss = output_loss / len(loader.dataset)
-    return test_loss
+    outputs_collection = np.concatenate(outputs_collection, axis=0)
+    return test_loss, outputs_collection
 
 def get_inputs_outputs_targets(model, loader, device):
         all_inputs = []
