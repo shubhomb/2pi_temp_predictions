@@ -1768,6 +1768,7 @@ def compute_cv_zscore_correlations(
     initial_cond_size,
     snippet_length,
     stim_delay=10,
+    zscore=False,
     window_size=50,
     save_dir=None,
     save_plots=True,
@@ -1834,7 +1835,7 @@ def compute_cv_zscore_correlations(
     
     # Create output directory
     if save_dir is None:
-        save_dir = os.path.join(model_dir, 'zscore_corr_cv')
+        save_dir = os.path.join(model_dir, 'corr_cv')
     if save_plots:
         os.makedirs(save_dir, exist_ok=True)
     
@@ -1891,15 +1892,15 @@ def compute_cv_zscore_correlations(
         
         if len(test_df) == 0:
             logging.warning(f"Fold {fold_idx}: No test samples for holdout={holdout_elem}")
-            fold_result['zscore_correlations'] = {}
-            fold_result['mean_zscore_corr'] = np.nan
+            fold_result['correlations'] = {}
+            fold_result['mean_corr'] = np.nan
             continue
         
         model = get_model_for_holdout(holdout_elem)
         if model is None:
             logging.warning(f"Fold {fold_idx}: Could not load model for holdout={holdout_elem}")
-            fold_result['zscore_correlations'] = {}
-            fold_result['mean_zscore_corr'] = np.nan
+            fold_result['correlations'] = {}
+            fold_result['mean_corr'] = np.nan
             continue
         
         fold_correlations = {}
@@ -1940,9 +1941,12 @@ def compute_cv_zscore_correlations(
                 y_true_raw = y_true_raw[:min_len]
                 
                 # Apply rolling z-score normalization
-                y_pred_norm = rolling_z_score(y_pred_raw, window_size)
-                y_true_norm = rolling_z_score(y_true_raw, window_size)
-                
+                if zscore: 
+                    y_pred_norm = rolling_z_score(y_pred_raw, window_size)
+                    y_true_norm = rolling_z_score(y_true_raw, window_size)
+                else:
+                    y_pred_norm = y_pred_raw
+                    y_true_norm = y_true_raw
                 # Compute correlation
                 corr_value = np.corrcoef(y_pred_norm, y_true_norm)[0, 1]
                 if not np.isnan(corr_value):
@@ -1966,7 +1970,7 @@ def compute_cv_zscore_correlations(
                     plt.plot(y_pred_raw, 'blue', linewidth=1.0, label="predicted (original scale)", alpha=0.8)
                     plt.plot(y_true_raw, 'orange', linewidth=1.0, label="ground truth (original scale)", alpha=0.8)
                     
-                    plt.title(f"Fold {fold_idx} | ROI {roi}, Config {config} | Z-Corr={corr_value:.3f}")
+                    plt.title(f"Fold {fold_idx} | ROI {roi}, Config {config} | Corr={corr_value:.3f}")
                     plt.ylim(-0.2, 0.5)
                     plt.ylabel("df/F")
                     plt.xlabel("Time (frames)")
@@ -1977,28 +1981,28 @@ def compute_cv_zscore_correlations(
                     plt.close()
         
         # Store fold-level results
-        fold_result['zscore_correlations'] = fold_correlations
+        fold_result['correlations'] = fold_correlations
         fold_mean = np.nanmean(fold_all_corrs) if fold_all_corrs else np.nan
-        fold_result['mean_zscore_corr'] = fold_mean
+        fold_result['mean_corr'] = fold_mean
         all_fold_correlations.extend(fold_all_corrs)
         
-        logging.info(f"Fold {fold_idx} | Holdout={holdout_elem} | Mean Z-Corr={fold_mean:.4f} (n={len(fold_all_corrs)})")
+        logging.info(f"Fold {fold_idx} | Holdout={holdout_elem} | Mean Corr={fold_mean:.4f} (n={len(fold_all_corrs)})")
     
     # Overall statistics
     overall_mean_corr = np.nanmean(all_fold_correlations) if all_fold_correlations else np.nan
     overall_std_corr = np.nanstd(all_fold_correlations) if all_fold_correlations else np.nan
     
-    logging.info(f"Overall Mean Z-Score Correlation: {overall_mean_corr:.4f} ± {overall_std_corr:.4f} (n={len(all_fold_correlations)})")
+    logging.info(f"Overall Mean Correlation: {overall_mean_corr:.4f} ± {overall_std_corr:.4f} (n={len(all_fold_correlations)})")
     
     # Print summary
     print("\n" + "="*70)
-    print(f"Z-SCORE CORRELATION RESULTS ({split_strategy} strategy)")
+    print(f"CORRELATION RESULTS ({split_strategy} strategy)")
     print("="*70)
     for r in cv_results:
         print(f"  Fold {r['fold']:2d} | Holdout={str(r['holdout_element']):>4s} | "
-              f"Z-Corr={r.get('mean_zscore_corr', np.nan):.4f}")
+              f"Corr={r.get('mean_corr', np.nan):.4f}")
     print("-"*70)
-    print(f"  OVERALL Mean Z-Score Correlation: {overall_mean_corr:.4f} ± {overall_std_corr:.4f}")
+    print(f"  OVERALL Mean Correlation: {overall_mean_corr:.4f} ± {overall_std_corr:.4f}")
     print("="*70)
     
     # Clear model cache
